@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply min-h-screen mx-auto px-5 sm:max-w-lg md:max-w-xl lg:max-w-5xl dark:bg-gradient-to-tl from-black to-slate-900;
+    }
+}
