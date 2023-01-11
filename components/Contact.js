@@ -108,7 +108,7 @@ export const Contact = () => {
           <label className='block text-sm font-bold mb-2' htmlFor='message'>
             Message
           </label>
-          <textarea className='bg-transparent shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline' id='message' name='message' rows='6' placeholder='Message' required />
+          <textarea className='scrollbar bg-transparent shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline' id='message' name='message' rows='6' placeholder='Message' required />
         </div>
         <div className='w-24 flex items-center justify-between'>
           {loading ? (
