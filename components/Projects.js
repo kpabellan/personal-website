@@ -1,55 +1,39 @@
-import React, { useState } from 'react';
 import { BsArrowUpRightCircleFill } from 'react-icons/bs';
 
 const projects = [
   {
     title: 'Stellar AIO Websocket Server',
     description: 'A websocket server made for StellarAIO monitors that sends product inventory alerts.',
-    repository: 'https://github.com/kpabellan/stellaraio-websocket-server',
-    technology: 'Node.js, Websockets'
+    repository: 'https://github.com/kpabellan/stellaraio-websocket-server'
   },
   {
     title: 'Adafruit Bot',
     description: 'A request based Adafruit bot that is geared to acquiring Raspberry Pis.',
-    repository: 'https://github.com/kpabellan/adafruit-bot',
-    technology: 'Javascript, Node.js, Postman'
+    repository: 'https://github.com/kpabellan/adafruit-bot'
   },
   {
     title: 'Target In-Store PS5 Monitor',
     description: 'A Target in-store inventory monitor for PS5 consoles that sends alerts to SMS and Discord webhook.',
-    repository: 'https://github.com/kpabellan/target-in-store-ps5-monitor',
-    technology: 'Node.js, Twilio, Webhook'
+    repository: 'https://github.com/kpabellan/target-in-store-ps5-monitor'
   },
   {
     title: 'Arduino Gate Opener',
     description: 'A personal project that opens a gate with an Arduino remotely through a webpage.',
-    repository: 'https://github.com/kpabellan/arduino-gate-opener',
-    technology: 'Arduino, Node.js, Javascript'
+    repository: 'https://github.com/kpabellan/arduino-gate-opener'
   },
   {
     title: 'Krispy Kreme Generator',
     description: 'Generates Krispy Kreme accounts with next day birthday, allowing users to get free donuts.',
-    repository: 'https://github.com/kpabellan/krispy-kreme-generator',
-    technology: 'Golang'
+    repository: 'https://github.com/kpabellan/krispy-kreme-generator'
   },
   {
     title: 'Personal Website (This one!)',
     description: 'A personal website made with Next.js and Tailwind CSS.',
-    repository: 'https://github.com/kpabellan/personal-website',
-    technology: 'Next.js, Tailwind CSS, Postmark'
+    repository: 'https://github.com/kpabellan/personal-website'
   },
 ];
 
 export const Projects = () => {
-  const [expanded, setExpanded] = useState({});
-
-  const toggleExpanded = (title) => {
-    setExpanded({
-      ...expanded,
-      [title]: !expanded[title],
-    });
-  };
-
   return (
     <div className='pb-10'>
       <div className='pb-5'>
@@ -70,15 +54,9 @@ export const Projects = () => {
                 <p className='text-gray-700 text-base'>
                   {project.description}
                 </p>
-                <button onClick={() => toggleExpanded(project.title)} className='pt-3 hover:text-gray-500 click:text-black'>
-                  {expanded[project.title] ? 'Collapse' : 'Expand'}
-                </button>
-                {expanded[project.title] && (
-                  <div>
-                    <p><span className='text-gray-700'>Tech used: {project.technology}</span></p>
-                    <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700'>Link to repository <BsArrowUpRightCircleFill className='inline-block' /></a>
-                  </div>
-                )}
+                <div className='pt-3'>
+                  <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500'>Link to repository <BsArrowUpRightCircleFill className='inline-block' /></a>
+                </div>
               </div>
             </div>
           </div>
