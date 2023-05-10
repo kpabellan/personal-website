@@ -48,7 +48,7 @@ export const Projects = () => {
             key={project.title}
             className='w-full lg:w-1/2 px-4 pb-5'
           >
-            <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg'>
+            <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg transition-transform duration-300 transform hover:scale-105'>
               <div className='px-3 py-4'>
                 <div className='font-bold text-xl mb-2'>{project.title}</div>
                 <p className='text-gray-700 text-base'>
