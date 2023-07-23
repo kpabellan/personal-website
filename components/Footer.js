@@ -38,7 +38,7 @@ export const Footer = () => {
             <div
               className='px-1 hover:text-gray-400'
               onClick={() => {
-                navigator.clipboard.writeText('KP#6934');
+                navigator.clipboard.writeText('kepsta');
                 alert('Copied Discord To Clipboard');
               }}
             >
