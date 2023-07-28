@@ -48,15 +48,18 @@ export const Projects = () => {
             key={project.title}
             className='w-full lg:w-1/2 px-4 pb-5'
           >
-            <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg transition-transform duration-300 transform hover:scale-105'>
-              <div className='px-3 py-4'>
+            <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg transition-transform duration-300 transform hover:scale-105 flex flex-col h-full'>
+              <div className='px-3 py-4 flex-1'>
                 <div className='text-xl mb-2'>{project.title}</div>
-                <p className='text-gray-700 text-base'>
+                <p className='text-gray-700 text-base flex-1'>
                   {project.description}
                 </p>
-                <div className='pt-3'>
-                  <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500'>Link to repository <BsArrowUpRightCircleFill className='inline-block' /></a>
-                </div>
+              </div>
+              <div className='px-3 pb-3'>
+                <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500 flex items-center'>
+                  <span>Link to repository</span>
+                  <BsArrowUpRightCircleFill className='inline-block ml-1' />
+                </a>
               </div>
             </div>
           </div>

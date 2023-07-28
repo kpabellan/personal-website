@@ -2,16 +2,16 @@ import '../styles/globals.css'
 import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import { Layout } from '../components/Layout'
-import { Comfortaa } from '@next/font/google'
+import { Roboto } from '@next/font/google'
 
-const comfortaa = Comfortaa({
+const roboto = Roboto({
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-comfortaa'
-});
+})
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${comfortaa.variable} font-arial`}>
+    <main className={roboto.className}>
 
       <Script strategy='afterInteractive' src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_PROPERTY_ID}`} />
 
