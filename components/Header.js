@@ -50,11 +50,11 @@ export const Header = () => {
         {navigations.map((navigation) => (
           <li key={navigation.path} className={router.pathname === navigation.path ? 'underline' : ''}>
             {navigation.label === 'Resume' ? (
-              <Link href={navigation.path} target='_blank' rel='noopener noreferrer' className='font-semibold text-gray-400 hover:text-gray-500'>
+              <Link href={navigation.path} target='_blank' rel='noopener noreferrer' className='text-gray-400 hover:text-gray-500'>
                 {navigation.label}
               </Link>
             ) : (
-              <Link href={navigation.path} className='font-semibold text-gray-400 hover:text-gray-500'>
+              <Link href={navigation.path} className='text-gray-400 hover:text-gray-500'>
                 {navigation.label}
               </Link>
             )}
