@@ -46,7 +46,7 @@ export const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className='w-full lg:w-1/2 px-4 pb-5'
+            className='w-full px-4 lg:w-1/2 lg:px-2.5 pb-5'
           >
             <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg transition-transform duration-300 transform hover:scale-105 flex flex-col h-full'>
               <div className='px-3 py-4 flex-1'>
