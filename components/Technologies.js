@@ -1,6 +1,7 @@
 import {
   SiVisualstudiocode,
   SiGithub,
+  SiDocker,
   SiPython,
   SiJavascript,
   SiCplusplus,
@@ -27,6 +28,11 @@ export const Technologies = () => {
         <li className='flex items-center space-x-2'>
           <span><SiGithub /></span>
           <span>Github</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiDocker /></span>
+          <span>Docker</span>
         </li>
 
         <li className='flex items-center space-x-2'>
