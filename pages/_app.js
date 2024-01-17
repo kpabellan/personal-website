@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import { Layout } from '../components/Layout'
-import { Roboto } from '@next/font/google'
+import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({
   weight: '400',
