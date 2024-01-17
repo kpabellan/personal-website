@@ -29,7 +29,7 @@ export const Header = () => {
           className='bg-transparent text-white-400 font-semibold hover:text-yellow-400'
           onClick={() => setTheme('light')}
         >
-          <BsMoonFill className='cursor-pointer text-xl' />
+          <BsFillSunFill className='cursor-pointer text-xl' />
         </button>
       );
     } else {
@@ -38,7 +38,7 @@ export const Header = () => {
           className='bg-transparent text-white-400 font-semibold hover:text-yellow-400'
           onClick={() => setTheme('dark')}
         >
-          <BsFillSunFill className='cursor-pointer text-xl' />
+          <BsMoonFill className='cursor-pointer text-xl' />
         </button>
       );
     }
