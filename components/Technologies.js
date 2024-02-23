@@ -1,16 +1,17 @@
 import {
   SiVisualstudiocode,
-  SiGithub,
+  SiGit,
   SiDocker,
   SiPython,
   SiJavascript,
   SiCplusplus,
   SiGo,
   SiNodedotjs,
+  SiReact,
   SiNextdotjs,
   SiTailwindcss,
   SiPostman
-} from 'react-icons/si'
+} from 'react-icons/si';
 
 export const Technologies = () => {
   return (
@@ -20,20 +21,6 @@ export const Technologies = () => {
       </h1>
 
       <ul className='grid grid-cols-3 gap-4 sm:grid-cols-4'>
-        <li className='flex items-center space-x-2'>
-          <span><SiVisualstudiocode /></span>
-          <span>VS Code</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiGithub /></span>
-          <span>Github</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiDocker /></span>
-          <span>Docker</span>
-        </li>
 
         <li className='flex items-center space-x-2'>
           <span><SiPython /></span>
@@ -56,8 +43,28 @@ export const Technologies = () => {
         </li>
 
         <li className='flex items-center space-x-2'>
+          <span><SiVisualstudiocode /></span>
+          <span>VS Code</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiGit /></span>
+          <span>Git</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiDocker /></span>
+          <span>Docker</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
           <span><SiNodedotjs /></span>
           <span>Node.js</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiReact /></span>
+          <span>React</span>
         </li>
 
         <li className='flex items-center space-x-2'>
@@ -77,5 +84,5 @@ export const Technologies = () => {
       </ul>
 
     </div>
-  )
-}
+  );
+};
