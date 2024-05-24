@@ -20,7 +20,7 @@ export const Footer = () => {
               <SiGithub size={24} />
             </a>
             <a
-              href='https://www.linkedin.com/in/kobey-pabellan-484b46257/'
+              href='https://www.linkedin.com/in/kobeypabellan/'
               className='px-1 hover:text-gray-400'
               target='_blank'
               rel='noopener noreferrer'
