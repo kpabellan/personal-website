@@ -54,6 +54,8 @@ export const Photos = () => {
               src={src}
               alt={`Image ${index + 1}`}
               fill
+              sizes="(max-width: 1920px) 100vw"
+              quality={80}
               priority
               className={`absolute rounded-xl object-cover transition-opacity duration-1000 ease-in-out ${slide === index ? "opacity-100" : "opacity-0"}`}
               style={{ objectFit: "cover" }}

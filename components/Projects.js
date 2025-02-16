@@ -77,33 +77,33 @@ export const Projects = () => {
       </div>
       <div className='flex flex-wrap -mx-4'>
         {projects.map((project) => {
-          const repoInfo = repoStats[project.repository] || { stars: '...', forks: '...' };
+          const repoInfo = repoStats[project.repository] || { stars: null, forks: null };
           return (
             <div key={project.title} className='w-full px-4 lg:w-1/2 lg:px-2.5 pb-5'>
-              <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg transition-transform duration-300 transform hover:scale-105 flex flex-col h-full'>
+              <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg flex flex-col h-full'>
                 <div className='px-3 pt-3 flex-1'>
                   <div className='text-xl mb-2'>{project.title}</div>
                   <p className='text-gray-700 text-base flex-1'>{project.description}</p>
                 </div>
 
                 <div className='px-3 pb-3'>
-                  <div className="text-sm text-gray-800 py-2 flex items-center">
-                    {repoInfo.stars > 0 && (
-                      <>
-                        <TbStar className="mr-1" />
-                        {repoInfo.stars}
-                      </>
-                    )}
+                  <div className="text-sm text-gray-800 py-2 flex items-center min-w-[100px]">
+                    <div className='flex items-center'>
+                      <TbStar className="mr-1" />
+                      <div className={`transition-opacity duration-300 ${repoInfo.stars === null ? 'opacity-0' : 'opacity-100'}`}>
+                        {repoInfo.stars !== null ? repoInfo.stars : '...'}
+                      </div>
+                    </div>
 
-                    {repoInfo.forks > 0 && (
-                      <>
-                        <TbGitFork className="ml-3 mr-1" />
-                        {repoInfo.forks}
-                      </>
-                    )}
+                    <div className='flex items-center ml-3'>
+                      <TbGitFork className="mr-1" />
+                      <div className={`transition-opacity duration-300 ${repoInfo.forks === null ? 'opacity-0' : 'opacity-100'}`}>
+                        {repoInfo.forks !== null ? repoInfo.forks : '...'}
+                      </div>
+                    </div>
                   </div>
 
-                  <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500 flex items-center'>
+                  <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500 inline-flex items-center'>
                     <span>Link to repository</span>
                     <BsArrowUpRightCircleFill className='inline-block ml-1' />
                   </a>
