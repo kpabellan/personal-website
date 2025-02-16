@@ -1,6 +1,7 @@
 import { Introduction } from '../components/Introduction';
 import { Projects } from '../components/Projects';
 import { Technologies } from '../components/Technologies';
+import { Photos } from '../components/Photos';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Introduction />
         <Projects />
         <Technologies />
+        <Photos />
       </motion.div>
     </div>
   );

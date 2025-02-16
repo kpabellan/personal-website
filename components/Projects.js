@@ -40,7 +40,7 @@ export const Projects = () => {
         <h1 className='text-left pb-5 text-2xl md:text-3xl lg:text-5xl'>
           Projects 👨‍💻
         </h1>
-        <p className='mx-auto text-left text-xl'>Here are some projects that I have created. There are more on my Github page <a href='https://github.com/kpabellan' className='underline hover:no-underline hover:text-gray-400' target='_blank' rel='noopener noreferrer'>here.</a></p>
+        <p className='mx-auto text-left text-xl'>Here are some projects that I have created. There are more on my Github page <a href='https://github.com/kpabellan' className='underline hover:no-underline hover:text-gray-400' target='_blank' rel='noopener noreferrer'>here</a>.</p>
       </div>
       <div className='flex flex-wrap -mx-4'>
         {projects.map((project) => (

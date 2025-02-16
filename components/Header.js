@@ -15,7 +15,7 @@ export const Header = () => {
   const navigations = [
     { label: 'Home', path: '/' },
     { label: 'Contact', path: '/contact' },
-    { label: 'Resume', path: '/resume.pdf' }
+    { label: 'Resume', path: '/kobey_pabellan_resume.pdf' }
   ];
 
   const renderThemeChanger = () => {
