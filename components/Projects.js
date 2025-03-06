@@ -4,19 +4,9 @@ import { TbStar, TbGitFork } from "react-icons/tb";
 
 const projects = [
   {
-    title: 'Stellar AIO Websocket Server',
-    description: 'A websocket server made for StellarAIO monitors that sends product inventory alerts.',
-    repository: 'https://github.com/kpabellan/stellaraio-websocket-server'
-  },
-  {
     title: 'Adafruit Bot',
     description: 'A request based Adafruit bot that is geared to acquiring Raspberry Pis.',
     repository: 'https://github.com/kpabellan/adafruit-bot'
-  },
-  {
-    title: 'Target In-Store PS5 Monitor',
-    description: 'A Target in-store inventory monitor for PS5 consoles that sends alerts to SMS and Discord webhook.',
-    repository: 'https://github.com/kpabellan/target-in-store-ps5-monitor'
   },
   {
     title: 'Arduino Gate Opener',
@@ -24,14 +14,24 @@ const projects = [
     repository: 'https://github.com/kpabellan/arduino-gate-opener'
   },
   {
+    title: 'Campster',
+    description: 'A campsite reservation helper that monitors and secures available campsites on recreation.gov.',
+    repository: 'https://github.com/kpabellan/campster'
+  },
+  {
     title: 'Krispy Kreme Generator',
     description: 'Generates Krispy Kreme accounts with next day birthday, allowing users to get free donuts.',
     repository: 'https://github.com/kpabellan/krispy-kreme-generator'
   },
   {
-    title: 'Campster',
-    description: 'A campsite reservation helper that monitors and secures available campsites on recreation.gov.',
-    repository: 'https://github.com/kpabellan/campster'
+    title: 'Stellar AIO Websocket Server',
+    description: 'A websocket server made for StellarAIO monitors that sends product inventory alerts.',
+    repository: 'https://github.com/kpabellan/stellaraio-websocket-server'
+  },
+  {
+    title: 'Target In-Store PS5 Monitor',
+    description: 'A Target in-store inventory monitor for PS5 consoles that sends alerts to SMS and Discord webhook.',
+    repository: 'https://github.com/kpabellan/target-in-store-ps5-monitor'
   },
 ];
 
