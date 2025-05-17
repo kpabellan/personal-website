@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-      @apply min-h-screen mx-auto px-5 sm:max-w-lg md:max-w-xl lg:max-w-5xl bg-neutral-100 dark:bg-zinc-800;
+      @apply min-h-screen mx-auto px-5 sm:max-w-lg md:max-w-xl lg:max-w-5xl bg-neutral-100 dark:bg-zinc-900;
     }
 }
 

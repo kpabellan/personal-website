@@ -1,16 +1,16 @@
 import {
-  SiVisualstudiocode,
-  SiGit,
-  SiDocker,
-  SiPython,
-  SiJavascript,
   SiCplusplus,
-  SiGo,
-  SiNodedotjs,
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiPostman
+  SiDocker,
+  SiGit,
+  SiJavascript,
+  SiLinux,
+  SiPostman,
+  SiPython,
+  SiSplunk,
+  SiVmware,
+  SiVirtualbox,
+  SiVisualstudiocode,
+  SiWireshark,
 } from 'react-icons/si';
 
 export const Technologies = () => {
@@ -23,33 +23,8 @@ export const Technologies = () => {
       <ul className='grid grid-cols-3 gap-4 sm:grid-cols-4'>
 
         <li className='flex items-center space-x-2'>
-          <span><SiPython /></span>
-          <span>Python</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiJavascript /></span>
-          <span>Javascript</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
           <span><SiCplusplus /></span>
           <span>C/C++</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiGo /></span>
-          <span>Golang</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiVisualstudiocode /></span>
-          <span>VS Code</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiGit /></span>
-          <span>Git</span>
         </li>
 
         <li className='flex items-center space-x-2'>
@@ -58,31 +33,56 @@ export const Technologies = () => {
         </li>
 
         <li className='flex items-center space-x-2'>
-          <span><SiNodedotjs /></span>
-          <span>Node.js</span>
+          <span><SiGit /></span>
+          <span>Git</span>
         </li>
 
         <li className='flex items-center space-x-2'>
-          <span><SiReact /></span>
-          <span>React</span>
+          <span><SiJavascript /></span>
+          <span>Javascript</span>
         </li>
 
         <li className='flex items-center space-x-2'>
-          <span><SiNextdotjs /></span>
-          <span>Next.js</span>
-        </li>
-
-        <li className='flex items-center space-x-2'>
-          <span><SiTailwindcss /></span>
-          <span>Tailwind CSS</span>
+          <span><SiLinux /></span>
+          <span>Linux</span>
         </li>
 
         <li className='flex items-center space-x-2'>
           <span><SiPostman /></span>
           <span>Postman</span>
         </li>
-      </ul>
 
+        <li className='flex items-center space-x-2'>
+          <span><SiPython /></span>
+          <span>Python</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiSplunk /></span>
+          <span>Splunk</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiVmware /></span>
+          <span>VMware</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiVirtualbox /></span>
+          <span>VirtualBox</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiVisualstudiocode /></span>
+          <span>VS Code</span>
+        </li>
+
+        <li className='flex items-center space-x-2'>
+          <span><SiWireshark /></span>
+          <span>Wireshark</span>
+        </li>
+
+      </ul>
     </div>
   );
 };
