@@ -69,7 +69,7 @@ export const Projects = () => {
           Projects 👨‍💻
         </h1>
         <p className='text-left text-xl'>
-          Here are some projects that I have created.
+          Here are some projects that I have worked on.
         </p>
       </div>
 
