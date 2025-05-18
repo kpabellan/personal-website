@@ -19,11 +19,6 @@ const projects = [
     repository: 'https://github.com/kpabellan/campster'
   },
   {
-    title: 'Krispy Kreme Generator',
-    description: 'Generates Krispy Kreme accounts with next day birthday, allowing users to get free donuts.',
-    repository: 'https://github.com/kpabellan/krispy-kreme-generator'
-  },
-  {
     title: 'Stellar AIO Websocket Server',
     description: 'A websocket server made for StellarAIO monitors that sends product inventory alerts.',
     repository: 'https://github.com/kpabellan/stellaraio-websocket-server'
@@ -73,46 +68,58 @@ export const Projects = () => {
         <h1 className='text-left pb-5 text-2xl md:text-3xl lg:text-5xl'>
           Projects 👨‍💻
         </h1>
-        <p className='mx-auto text-left text-xl'>Here are some projects that I have created. There are more on my Github page <a href='https://github.com/kpabellan' className='underline hover:no-underline hover:text-gray-400' target='_blank' rel='noopener noreferrer'>here</a>.</p>
+        <p className='text-left text-xl'>
+          Here are some projects that I have created.
+        </p>
       </div>
-      <div className='flex flex-wrap -mx-4'>
+
+      <div className='divide-y divide-gray-300'>
         {projects.map((project) => {
           const repoInfo = repoStats[project.repository] || { stars: null, forks: null };
+
           return (
-            <div key={project.title} className='w-full px-4 lg:w-1/2 lg:px-2.5 pb-5'>
-              <div className='rounded-lg overflow-hidden bg-gray-400 shadow-lg flex flex-col h-full'>
-                <div className='px-3 pt-3 flex-1'>
-                  <div className='text-xl mb-2'>{project.title}</div>
-                  <p className='text-gray-700 text-base flex-1'>{project.description}</p>
+            <div key={project.title} className='py-4'>
+              <span className='font-semibold text-lg'>{project.title}</span>
+
+              <p className='mt-2 mb-2'>{project.description}</p>
+
+              <div className='flex items-center space-x-4 text-sm'>
+                <div className='flex items-center space-x-1'>
+                  <TbStar />
+                  <span>{repoInfo.stars !== null ? repoInfo.stars : '...'}</span>
                 </div>
 
-                <div className='px-3 pb-3'>
-                  <div className="text-sm text-gray-800 py-2 flex items-center min-w-[100px]">
-                    <div className='flex items-center'>
-                      <TbStar className="mr-1" />
-                      <div className={`transition-opacity duration-300 ${repoInfo.stars === null ? 'opacity-0' : 'opacity-100'}`}>
-                        {repoInfo.stars !== null ? repoInfo.stars : '...'}
-                      </div>
-                    </div>
-
-                    <div className='flex items-center ml-3'>
-                      <TbGitFork className="mr-1" />
-                      <div className={`transition-opacity duration-300 ${repoInfo.forks === null ? 'opacity-0' : 'opacity-100'}`}>
-                        {repoInfo.forks !== null ? repoInfo.forks : '...'}
-                      </div>
-                    </div>
-                  </div>
-
-                  <a href={project.repository} target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-500 inline-flex items-center'>
-                    <span>Link to repository</span>
-                    <BsArrowUpRightCircleFill className='inline-block ml-1' />
-                  </a>
+                <div className='flex items-center space-x-1'>
+                  <TbGitFork />
+                  <span>{repoInfo.forks !== null ? repoInfo.forks : '...'}</span>
                 </div>
+
+                <a
+                  href={project.repository}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-flex items-center'
+                >
+                  <span>Repository</span>
+                  <BsArrowUpRightCircleFill className='ml-1' />
+                </a>
               </div>
             </div>
           );
         })}
       </div>
+
+      <p className='text-left text-xl'>
+        There are more projects on my GitHub page{' '}
+        <a
+          href='https://github.com/kpabellan'
+          className='underline hover:no-underline hover:text-gray-400'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          here
+        </a>.
+      </p>
     </div>
   );
 };
