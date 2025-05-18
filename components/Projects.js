@@ -64,7 +64,7 @@ export const Projects = () => {
 
   return (
     <div className='pb-10'>
-      <div className='pb-5'>
+      <div>
         <h1 className='text-left pb-5 text-2xl md:text-3xl lg:text-5xl'>
           Projects 👨‍💻
         </h1>
