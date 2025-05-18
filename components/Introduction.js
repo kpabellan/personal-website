@@ -17,7 +17,7 @@ export const Introduction = () => {
       </h1>
 
       <p className='mx-auto text-left text-xl'>
-        I&apos;m a Computer Science and Engineering graduate from the <a href='https://www.ucmerced.edu/about' target='_blank' rel='noopener noreferrer' className='underline hover:no-underline hover:text-gray-400'>University of California, Merced</a>. I have a strong interest in technology and enjoy working with systems, solving technical problems, and continually learning new tools and skills. Feel free to connect with me through my social media profiles.
+        I&apos;m a Computer Science and Engineering graduate from the <a href='https://www.ucmerced.edu/about' target='_blank' rel='noopener noreferrer' className='underline hover:no-underline hover:text-gray-400'>University of California, Merced</a>. I have a strong interest in technology and enjoy working with systems, solving technical problems, and actively expanding my knowledge of new tools and skills. Feel free to connect with me through my social media profiles.
       </p>
     </div>
   );
