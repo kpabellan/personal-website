@@ -86,12 +86,16 @@ export const Projects = () => {
               <div className='flex items-center space-x-4 text-sm'>
                 <div className='flex items-center space-x-1'>
                   <TbStar />
-                  <span>{repoInfo.stars !== null ? repoInfo.stars : '...'}</span>
+                  <span className={`inline-block min-w-[10x] text-right transition-opacity duration-300 ${repoInfo.stars === null ? 'opacity-0' : 'opacity-100'}`}>
+                    {repoInfo.stars !== null ? repoInfo.stars : '0'}
+                  </span>
                 </div>
 
                 <div className='flex items-center space-x-1'>
                   <TbGitFork />
-                  <span>{repoInfo.forks !== null ? repoInfo.forks : '...'}</span>
+                  <span className={`inline-block min-w-[10px] text-right transition-opacity duration-300 ${repoInfo.stars === null ? 'opacity-0' : 'opacity-100'}`}>
+                    {repoInfo.forks !== null ? repoInfo.forks : '...'}
+                  </span>
                 </div>
 
                 <a
