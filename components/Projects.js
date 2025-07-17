@@ -19,14 +19,14 @@ const projects = [
     repository: 'https://github.com/kpabellan/campster'
   },
   {
-    title: 'Stellar AIO Websocket Server',
-    description: 'A websocket server made for StellarAIO monitors that sends product inventory alerts.',
-    repository: 'https://github.com/kpabellan/stellaraio-websocket-server'
-  },
-  {
     title: 'Target In-Store PS5 Monitor',
     description: 'A Target in-store inventory monitor for PS5 consoles that sends alerts to SMS and Discord webhook.',
     repository: 'https://github.com/kpabellan/target-in-store-ps5-monitor'
+  },
+  {
+    title: 'Port Vulnerability Scanner',
+    description: 'Port and vulnerability scanner using Nmap.',
+    repository: 'https://github.com/kpabellan/port-vulnerability-scanner'
   },
 ];
 
